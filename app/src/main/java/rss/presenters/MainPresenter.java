@@ -7,10 +7,7 @@ import rss.presenters.interfaces.IMainPresenter;
 import rss.views.interfaces.IMainView;
 
 public class MainPresenter extends BasePresenter<IMainView> implements IMainPresenter {
-	private IRSSModel model;
 	public MainPresenter(IMainView view) {
 		super(view);
-
-		model = new RSSModel();
 	}
 }
