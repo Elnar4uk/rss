@@ -7,9 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import rss.R;
 import rss.presenters.interfaces.IMainPresenter;
 import rss.presenters.MainPresenter;
-import rss.views.DetailsView;
-import rss.views.MasterView;
 import rss.views.interfaces.IMainView;
+import rss.views.main.states.PhoneMainState;
+import rss.views.main.states.TabletMainState;
 
 public class MainView extends AppCompatActivity implements IMainView {
 	private IMainPresenter presenter;

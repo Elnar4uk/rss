@@ -1,8 +1,10 @@
-package rss.views.main;
+package rss.views.main.states;
 
 import rss.R;
 import rss.views.DetailsView;
 import rss.views.MasterView;
+import rss.views.main.MainView;
+import rss.views.main.states.BaseMainState;
 
 public class PhoneMainState extends BaseMainState {
 	public PhoneMainState(MainView view) {

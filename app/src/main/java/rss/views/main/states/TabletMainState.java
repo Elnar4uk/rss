@@ -1,7 +1,9 @@
-package rss.views.main;
+package rss.views.main.states;
 
 import rss.R;
 import rss.views.MasterView;
+import rss.views.main.MainView;
+import rss.views.main.states.BaseMainState;
 
 public class TabletMainState extends BaseMainState {
 	public TabletMainState(MainView view) {
