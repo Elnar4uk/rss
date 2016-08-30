@@ -51,6 +51,7 @@ public class MasterView extends Fragment implements IMasterView {
 	@Override
 	public void onDestroy() {//todo move to base class
 		presenter.onDestroy();
+		presenter = null;
 		super.onDestroy();
 	}
 }

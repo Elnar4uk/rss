@@ -50,6 +50,7 @@ public class DetailsView extends Fragment implements IDetailsView {
 	@Override
 	public void onDestroy() {//todo move to base class
 		presenter.onDestroy();
+		presenter = null;
 		super.onDestroy();
 	}
 }
