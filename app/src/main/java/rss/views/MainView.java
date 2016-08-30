@@ -4,9 +4,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import rss.presenters.IMainPresenter;
+import rss.R;
+import rss.presenters.interfaces.IMainPresenter;
 import rss.presenters.MainPresenter;
-import test.rss.R;
+import rss.views.interfaces.IMainView;
 
 public class MainView extends AppCompatActivity implements IMainView {
 	private IMainPresenter presenter;
@@ -16,6 +17,29 @@ public class MainView extends AppCompatActivity implements IMainView {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main_view);
+
+		if (savedInstanceState != null) {
+			return;
+		}
+
+		if(findViewById(R.id.fragment) != null) {
+			MasterView masterView = new MasterView();
+			masterView.setArguments(getIntent().getExtras());
+
+			getSupportFragmentManager().beginTransaction().add(R.id.fragment, masterView).commit();
+		}
+		else
+		{
+			MasterView masterView = new MasterView();
+			masterView.setArguments(getIntent().getExtras());
+
+			getSupportFragmentManager().beginTransaction().add(R.id.left, masterView).commit();
+
+			DetailsView detailsView = new DetailsView();
+			detailsView.setArguments(getIntent().getExtras());
+
+			getSupportFragmentManager().beginTransaction().add(R.id.right, detailsView).commit();
+		}
 
 		presenter = new MainPresenter(this);
 	}

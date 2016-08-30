@@ -1,4 +1,4 @@
-package rss.views;
+package rss.views.interfaces;
 
 public interface IMainView extends IView {
 }
