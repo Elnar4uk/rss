@@ -12,5 +12,8 @@ public abstract class BasePresenter<View extends IView> implements IPresenter {
 		this.view = view;
 	}
 
-
+	@Override
+	public void onDestroy() {
+		view = null;
+	}
 }

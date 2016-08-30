@@ -46,4 +46,10 @@ public class DetailsView extends Fragment implements IDetailsView {
 	public void update(RSSItem item) {
 
 	}
+
+	@Override
+	public void onDestroy() {//todo move to base class
+		presenter.onDestroy();
+		super.onDestroy();
+	}
 }

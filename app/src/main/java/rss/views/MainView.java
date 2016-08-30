@@ -45,4 +45,10 @@ public class MainView extends AppCompatActivity implements IMainView {
 
 		presenter = new MainPresenter(this);
 	}
+
+	@Override
+	public void onDestroy() {//todo move to base class
+		presenter.onDestroy();
+		super.onDestroy();
+	}
 }

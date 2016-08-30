@@ -47,4 +47,10 @@ public class MasterView extends Fragment implements IMasterView {
 
 		recyclerView.setAdapter(feedAdapter);
 	}
+
+	@Override
+	public void onDestroy() {//todo move to base class
+		presenter.onDestroy();
+		super.onDestroy();
+	}
 }
