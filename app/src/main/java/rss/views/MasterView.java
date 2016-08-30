@@ -3,6 +3,7 @@ package rss.views;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,7 +37,7 @@ public class MasterView extends Fragment implements IMasterView {
 	public void onStart() {
 		super.onStart();
 
-		presenter.loadFeed();
+		presenter.loadFeed(getResources().getString(R.string.url));
 	}
 
 	@Override

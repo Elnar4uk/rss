@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Rss</string>
-    <string name="title_rssitem_list">RssItems</string>
-    <string name="title_rssitem_detail">RssItem Detail</string>
+    <string name="url" translatable="false">https://lenta.ru/rss/news</string>
 </resources>

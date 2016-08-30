@@ -22,6 +22,8 @@ public class MainView extends AppCompatActivity implements IMainView {
 			return;
 		}
 
+		//todo add states
+
 		if(findViewById(R.id.fragment) != null) {
 			MasterView masterView = new MasterView();
 			masterView.setArguments(getIntent().getExtras());

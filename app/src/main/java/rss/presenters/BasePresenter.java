@@ -5,8 +5,12 @@ import rss.views.interfaces.IView;
 
 public abstract class BasePresenter<View extends IView> implements IPresenter {
 	private View view;
-
+	protected View getView() {
+		return view;
+	}
 	public BasePresenter(View view) {
 		this.view = view;
 	}
+
+
 }
