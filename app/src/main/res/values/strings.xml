@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rss</string>
+    <string name="title_rssitem_list">RssItems</string>
+    <string name="title_rssitem_detail">RssItem Detail</string>
+</resources>
