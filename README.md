@@ -1,1 +1,1 @@
-![alt tag](https://raw.githubusercontent.com/Elnar4uk/rss/master/trunk/wireframe.png)
+![alt tag](https://raw.githubusercontent.com/Elnar4uk/test.rss/master/trunk/wireframe.png)
