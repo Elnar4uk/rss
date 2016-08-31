@@ -1,7 +1,5 @@
 package rss.presenters;
 
-import android.os.Bundle;
-
 import org.mcsoxford.rss.RSSItem;
 
 import rss.presenters.interfaces.IDetailsPresenter;

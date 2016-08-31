@@ -2,7 +2,6 @@ package rss.presenters;
 
 import rss.models.IRSSModel;
 import rss.models.RSSModel;
-import rss.models.observers.IObservableModel;
 import rss.models.observers.Observer;
 import rss.models.responses.IRSSResponse;
 import rss.presenters.interfaces.IMasterPresenter;

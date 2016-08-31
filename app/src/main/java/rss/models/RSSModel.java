@@ -5,7 +5,6 @@ import org.mcsoxford.rss.RSSLoader;
 
 import java.util.concurrent.Future;
 
-import rss.models.observers.IObservableModel;
 import rss.models.observers.ObservableModel;
 import rss.models.responses.IRSSResponse;
 

@@ -5,8 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import rss.R;
-import rss.presenters.interfaces.IMainPresenter;
 import rss.presenters.MainPresenter;
+import rss.presenters.interfaces.IMainPresenter;
 import rss.views.interfaces.IMainView;
 import rss.views.main.states.PhoneMainState;
 import rss.views.main.states.TabletMainState;
